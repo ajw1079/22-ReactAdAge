@@ -6,6 +6,7 @@ import Footer from './pages/common/Footer';
 import Main from './pages/components/Main';
 import Category from './pages/components/Category';
 import Detail from './pages/components/Detail';
+import NotFound from './pages/components/NotFound';
 
 //ref 사용성 테스트
 import TestRef from "./pages/components/TestRef";
@@ -23,6 +24,7 @@ function App() {
 
         {/* ref 사용성 테스트 : 이미지 넣고 미리보여주고 일부 삭제 */}
         <Route exact path="/test" element={<TestRef/>}></Route>
+        <Route exact path="/*" element={<NotFound/>}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>
